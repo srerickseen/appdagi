@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>APP DA GI</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    button {
+      background-color: #ff00ff;
+      color: #fff;
+      font-size: 16px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    #cantada {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    #foto {
+      margin-top: 20px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h1>APP DA GIOVANNA</h1>
+  <button id="gerarCantada" onclick="gerarCantada()">CLIQUE AQUI PARA TER UMA SURPRESA</button>
+  <p id="cantada"></p>
+  <img id="foto" src="C:\Users\erick\Downloads\fotogi.png.jpg" alt="Imagem Cristã">
+
+  <script>
+    const cantadasCristas = [
+      "Você é como a Bíblia: cheia de boas histórias que quero conhecer melhor.",
+      "Você não é o Mar Vermelho, mas dividiu meu coração em duas partes.",
+      "Eu não sou Sansão, mas estou disposto a lutar contra leões por você.",
+      "Gata, você é tão Provérbios 31 que até fico sem palavras.",
+      "Posso ser o seu José? Vou cuidar de você e te proteger como ele fez com Maria.",
+      "Seu nome deve ser Graça, porque você é um presente de Deus na minha vida.",
+      "Posso te chamar de Canaã? Porque com você, minha vida será uma terra prometida.",
+      "Você é uma epístola viva, e eu não vejo a hora de ler cada capítulo da sua história.",
+      "Não sou do tempo de Noé, mas estou disposto a esperar 120 anos para te conquistar.",
+      "Se o amor fosse um fruto, você seria o meu figo do Eclesiastes 2:3.",
+      "Você não é a Arca de Noé, mas quero que você entre na minha vida e leve embora toda a tempestade.",
+      "Você não é a Torre de Babel, mas quero me perder em suas palavras.",
+      "Se você fosse Jericó, eu daria voltas ao redor de você até conquistar o seu coração.",
+      "Você é mais preciosa do que a prata purificada sete vezes.",
+      "Você não é Sansão, mas fez meu coração perder a força.",
+      "Como Abraão e Sara, eu e você somos feitos um para o outro.",
+      "Quando vejo você, meu coração queima como a sarça ardente.",
+      "Você não é a Arca da Aliança, mas eu quero te levar no centro do meu coração.",
+      "Assim como Rute disse a Noemi, onde você for, eu irei; onde você ficar, eu ficarei.",
+      "Você é como o maná, toda manhã eu quero te encontrar e me alimentar de amor.",
+      "O seu amor é como os lírios, floresce e perfuma todo o meu ser.",
+    ];
+
+    function gerarCantada() {
+      const cantadaElement = document.getElementById("cantada");
+      const randomIndex = Math.floor(Math.random() * cantadasCristas.length);
+      const cantada = cantadasCristas[randomIndex];
+      cantadaElement.innerText = cantada;
+    }
+  </script>
+</body>
+</html>
